@@ -1,0 +1,281 @@
+/*********** HEADER ************/
+
+.topnav {
+	background-color: #FFEBF2; 
+	height: 130px;
+	text-align: right;
+	margin: -1 auto;
+	border-bottom: 5px;
+    border-bottom-color: dimgray;
+   	display: block;
+   	position: relative;
+}
+
+.topnav ul {
+	list-style-type: none;
+	display: inline-block;
+	padding-top: 72px;
+}
+
+.topnav img.bag {
+	width: 23px;
+	float: right;
+	padding-top: 0px;
+	padding-right: 35px;
+}
+
+.topnav li {
+	display: inline;
+}
+
+
+.topnav li a {
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Nunito Sans', sans-serif;
+	padding: 0px 15px 15px 15px;
+}
+
+.topnav img {
+	width: 10%;
+	float: left;
+	padding-top: 40px;
+}
+
+.topnav img.bb {
+	width: 77px;
+	padding-left: 20px;
+	padding-top: 26px;
+}
+
+.topnav img.logo {
+	width: 165px;
+	padding: 28px 20px 5px;
+}
+
+
+/*********** BODY ************/
+
+.background {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.mainText {
+	color: black;
+	text-align: right;
+	text-decoration: none;
+	font-size: 90px;
+	font-family: 'Lato', sans-serif;
+	padding: 20px 80px 15px 20px;
+	margin: -35px 700px 15px 210px;
+	background-color: rgba(255,255,255, 0.55); 
+	position: absolute;
+	z-index: -1;
+	letter-spacing: 4px;
+}
+
+
+.otherText {
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	line-height: 1.8em;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	font-style: italic;
+	padding: 20px 10px 20px 10px;
+	margin: 90px 278px 15px 690px;
+	background-color: rgba(255,255,255, 0.75); 
+}
+
+img.button {
+	width: 160px;
+	padding: 28px 20px 5px;
+	margin: 10px 278px 15px 750px;
+
+}
+
+
+.col {
+	width: 33.1%;
+  	border-style: solid;
+  	border-width: 1px;
+  	float: left;
+  	height: 300px;
+}
+
+img.bun {
+	display: block;
+	margin-left: auto;
+	margin-top: 20px;
+	margin-right: auto;
+	width: 52%;
+
+}
+
+.col-text {
+	text-align: center;
+	margin-top: 250px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 250;
+	font-size: 30px;
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'img title'
+    'img quantity'
+    'img glaze'
+    'img total';
+  background-color: #ffffff;
+}
+
+.item1 { 	
+	grid-area: img; 
+	border-right: 0.5px solid grey; 
+	width: 96%; 
+	text-align: right;
+	margin-top: 70px;
+}
+
+.item1 img {
+	width: 57%;
+	padding-right: 110px;
+}
+
+.item2 { 
+	grid-area: title; }
+
+.item2 #reviews { 
+	width: 52%;
+	padding-left: 88px;
+	padding-top: 3px;
+}
+
+.item2 #text1{ 
+	font-size: 59px; 
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	padding-top: 65px;
+	padding-left: 84px;
+}
+
+.item3 { 
+	grid-area: quantity; 
+ }
+
+.item3 #text2{ 
+	font-size: 15px; 
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+	font-weight: 350;
+	padding-top: 10px;
+	padding-left: 85px;
+	padding-bottom: 3px;
+}
+
+.item3 #buns{ 
+	font-size: 17px; 
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-bottom: 3px;
+}
+
+.item3 #b1 {
+	width: 6.7%;
+	margin-left: 115px;
+	padding-right: 9px;
+	margin-top: 8px;
+}
+.item3 #b2 {
+	width: 6.7%;
+	padding-right: 10px;
+	margin-top: 8px;
+}
+.item3 #b3 {
+	width: 6.7%;
+	padding-right: 13px;
+	margin-top: 8px;
+}
+.item3 #b4 {
+	width: 6.7%;
+	padding-right: 14px;
+	margin-top: 8px;
+}
+.item3 #b5 {
+	width: 6.7%;
+	padding-right: 13px;
+	margin-top: 8px;
+}
+.item3 #clear {
+	width: 5%;
+	padding-bottom: 30px;
+}
+
+.item4 { 
+	grid-area: glaze; 
+}
+
+
+.item4 #text3{ 
+	font-size: 15px; 
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+	font-weight: 350;
+	padding-top: 0px;
+	padding-left: 85px;
+}
+
+.item4 #glaze { 
+	width: 32%;
+	margin-left: 115px;
+	margin-top: 13px;
+}
+
+
+.item5 { 
+	grid-area: total; 
+}
+
+.item5 #text4{ 
+	font-size: 15px; 
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+	font-weight: 350;
+	padding-top: 0px;
+	padding-left: 85px;
+}
+
+.item5 #price{ 
+	font-size: 20px; 
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	padding-top: 3px;
+	padding-left: 5px;
+}
+
+.item5 img { 
+	width: 22.5%;
+	margin-left: 120px;
+	margin-top: 10px;
+}
+
+#arrow { 
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	width: 2.7%;
+}
