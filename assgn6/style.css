@@ -1,0 +1,512 @@
+html,
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/*********** HEADER ************/
+.topnav {
+	background-color: #FFEBF2; 
+	height: 130px;
+	text-align: right;
+	margin: -1 auto;
+	border-bottom: 5px;
+    border-bottom-color: dimgray;
+   	display: block;
+   	position: relative;
+   	z-index: 0;
+}
+
+.topnav ul {
+	list-style-type: none;
+	display: inline-block;
+	padding-top: 72px;
+}
+
+.topnav img.bag {
+	width: 28px;
+	float: right;
+	z-index: 1;
+	position: absolute;
+	right: 28px;
+	padding-left: 15px;
+  	top: 43px;
+}
+
+.topnav #cart_count {
+	float: right;
+	padding-top: 3px;
+	padding-right: 38px;
+	font-size: 15px;
+	z-index: 0;
+}
+
+.topnav li {
+	display: inline;
+}
+
+
+.topnav li a {
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 0px 15px 15px 15px;
+}
+
+.topnav img {
+	width: 10%;
+	float: left;
+	padding-top: 40px;
+}
+
+.topnav img.bb {
+	width: 77px;
+	padding-left: 20px;
+	padding-top: 26px;
+}
+
+.topnav img.logo {
+	width: 165px;
+	padding: 28px 20px 5px;
+}
+
+
+
+
+/*********** BODY HOME PAGE ************/
+.background {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.mainText {
+	color: black;
+	text-align: right;
+	text-decoration: none;
+	font-size: 90px;
+	padding: 20px 80px 15px 20px;
+	margin: -35px 700px 15px 210px;
+	background-color: rgba(255,255,255, 0.55); 
+	position: absolute;
+	/* z-index allows other elements to lay on top of this element */
+	z-index: -1;
+	letter-spacing: 4px;
+}
+
+
+.otherText {
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	line-height: 1.8em;
+	font-weight: 500;
+	font-style: italic;
+	padding: 20px 10px 20px 10px;
+	margin: 90px 278px 15px 690px;
+	background-color: rgba(255,255,255, 0.75); 
+}
+
+img.button {
+	width: 160px;
+	padding: 28px 20px 5px;
+	margin: 10px 278px 15px 750px;
+
+}
+
+
+
+/*********** BODY SCROLL PAGE ************/
+.col {
+	/* make columns responsive */
+	width: 33.1%;
+  	border-style: solid;
+  	border-width: 1px;
+  	float: left;
+  	height: 300px;
+}
+
+img.bun {
+	display: block;
+	margin-left: auto;
+	margin-top: 20px;
+	margin-right: auto;
+	width: 52%;
+
+}
+
+
+
+/*********** BODY DETAILS PAGE ************/
+.grid-container {
+  display: grid;
+  /* set space each grid element takes */
+  grid-template-areas:
+    'img title'
+    'img quantity'
+    'img glaze'
+    'img total';
+  background-color: #ffffff;
+}
+
+.item1 { 	
+	/* set which part of grid is being styled for item1 */
+	grid-area: img; 
+	border-right: 0.5px solid grey; 
+	width: 96%; 
+	text-align: right;
+	margin-top: 70px;
+}
+
+.item1 img {
+	width: 57%;
+	padding-right: 110px;
+}
+
+.item2 { 
+	/* set which part of grid is being styled for item2 */
+	grid-area: title; 
+}
+
+.item2 #reviews { 
+	width: 52%;
+	padding-left: 88px;
+	padding-top: 3px;
+}
+
+.item2 #text1{ 
+	font-size: 59px; 
+	text-align: left;
+	font-weight: 400;
+	padding-top: 65px;
+	padding-left: 84px;
+}
+
+.item3 { 
+	/* set which part of grid is being styled for item3 */
+	grid-area: quantity; 
+ }
+
+
+.item3 #text2{ 
+	font-size: 15px; 
+	text-align: left;
+	font-weight: 350;
+	padding-top: 10px;
+	padding-left: 85px;
+	padding-bottom: 3px;
+	margin-top: 10px;
+}
+
+.item3 #buns{ 
+	font-size: 17px; 
+	text-align: left;
+	font-weight: 700;
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-bottom: 3px;
+}
+
+/* style quantity buttons */
+.quantity-circle {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.quantity-circle #b1 {
+	width: 31%;
+	padding-left: 90px;
+	margin-top: 8px;
+}
+.quantity-circle #b2 {
+	width: 70%;
+	margin-top: 8px;
+}
+.quantity-circle #b3 {
+	width: 70%;
+	margin-top: 8px;
+}
+.quantity-circle #b4 {
+	width: 70%;
+	margin-top: 8px;
+}
+.quantity-circle #b5 {
+	width: 70%;
+	margin-top: 8px;
+}
+#clear {
+	width: 7%;
+	padding-top: 5px;
+}
+
+.active-quantity {
+    border: 2px solid red;
+}
+
+
+.item4 { 
+	/* set which part of grid is being styled for item4 */
+	grid-area: glaze; 
+}
+
+
+.item4 #text3{ 
+	font-size: 15px; 
+	text-align: left;
+	font-weight: 350;
+	padding-top: 0px;
+	padding-left: 85px;
+}
+
+/* dropdown stuff*/
+.item4 {
+	width: 440px;
+	margin: auto 0;
+	text-align: center
+}
+
+/*Styling Selectbox*/
+.glaze {
+	margin-top: 10px;
+	width: 230px;
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 2px rgb(135, 135, 135);
+	transition: all .5s ease;
+	position: relative;
+	font-size: 13px;
+	color: #474747;
+	height: 100%;
+	text-align: left
+}
+.glaze .select {
+    cursor: pointer;
+    display: block;
+    padding: 10px
+}
+.glaze .select > i {
+    font-size: 13px;
+    color: #888;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    float: right;
+    line-height: 20px
+}
+.glaze:hover {
+    box-shadow: 0 0 4px rgb(204, 204, 204)
+}
+.glaze:active-glaze {
+    background-color: #f8f8f8
+}
+.glaze.active-glaze:hover,
+.glaze.active-glaze {
+    box-shadow: 0 0 4px rgb(204, 204, 204);
+    border-radius: 5px 5px 0 0;
+    background-color: #f8f8f8
+}
+.glaze.active-glaze .select > i {
+    transform: rotate(-90deg)
+}
+.glaze .dropdown-menu {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    margin-top: 1px;
+    box-shadow: 0 1px 2px rgb(204, 204, 204);
+    border-radius: 0 1px 5px 5px;
+    overflow: hidden;
+    display: none;
+    max-height: 144px;
+    overflow-y: auto;
+    z-index: 9
+}
+.glaze .dropdown-menu li {
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer
+} 
+.glaze .dropdown-menu {
+    padding: 0;
+    list-style: none
+}
+.glaze .dropdown-menu li:hover {
+    background-color: #f2f2f2
+}
+.glaze .dropdown-menu li:active {
+    background-color: #e2e2e2
+}
+
+
+/*.item4 #glaze { 
+	width: 32%;
+	margin-left: 115px;
+	margin-top: 13px;
+}*/
+
+
+.item5 {
+	/* set which part of grid is being styled for item5 */ 
+	grid-area: total; 
+}
+
+.item5 #text4{ 
+	font-size: 15px; 
+	text-align: left;
+	font-weight: 350;
+	padding-top: 0px;
+	padding-left: 85px;
+}
+
+.item5 #price{ 
+	font-size: 20px; 
+	text-align: left;
+	font-weight: 700;
+	padding-top: 3px;
+	padding-left: 5px;
+}
+
+.item5 img { 
+	width: 22.5%;
+	margin-left: 120px;
+	margin-top: 10px;
+}
+
+#arrow { 
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	width: 2.7%;
+}
+
+.active-color {
+	border: 2px solid red;
+}
+
+
+/*********** SHOPPING CART PAGE ************/
+.title {
+	padding-top: 18px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #E1E8EE;
+	color: #5E6977;
+	font-size: 42px;
+	font-weight: 300;
+}
+
+.shopping-cart {
+	width: 800px;
+	margin: auto;
+}
+
+
+.item {
+	padding: 20px 30px;
+	height: 75px;
+	display: flex;
+	/*  border-top:  1px solid #E1E8EE;*/
+	border-bottom:  1px solid #E1E8EE;
+	
+}
+
+.all {
+	margin: auto;
+}
+
+
+/* Buttons -  Delete */
+.delete-btn {
+	position: relative;
+	padding-top: 30px;
+	margin-right: 60px;
+}
+
+/* Product Image */
+.image {
+	margin-right: 50px;
+}
+
+/* Product Description */
+.description {
+	padding-top: 10px;
+	margin-right: 60px;
+	width: 115px;
+}
+
+.description span {
+	display: block;
+	color: #43484D;
+	font-weight: 400;
+}
+
+.description span:first-child {
+	margin-bottom: 3px;
+	margin-top: 12px;
+	font-size: 16px;
+}
+.description span:last-child {
+	font-weight: 300;
+	margin-top: 3px;
+	font-size: 12px;
+	color: #86939E;
+}
+
+/* Product Quantity */
+.quantity {
+	padding-top: 20px;
+	margin-right: 60px;
+}
+
+.quantity span {
+	-webkit-appearance: none;
+	border: none;
+	text-align: center;
+	width: 32px;
+	font-size: 16px;
+	color: #43484D;
+	font-weight: 300;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+button[class*=btn] {
+  width: 30px;
+  height: 30px;
+  background-color: #E1E8EE;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.minus-btn img {
+	margin-bottom: 3px;
+}
+.plus-btn img {
+	margin-top: 2px;
+}
+
+.image img {
+	width: 70px;
+}
+
+/* Total Price */
+.total-price {
+	width: 83px;
+	padding-top: 27px;
+	text-align: center;
+	font-size: 16px;
+	color: #43484D;
+	font-weight: 300;
+}
+
+
+.cart_footer #cart_checkout{ 
+	width: 100px;
+	float: right;
+	padding-top: 0px;
+	padding-right: 0px;
+}
+
+
+

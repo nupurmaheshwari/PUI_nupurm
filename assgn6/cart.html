@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>BunBun Bakery</title>
+        <meta charset="UTF-8">
+        <!-- styles -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- fonts -->
+    	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400&display=swap" rel="stylesheet">
+        <!-- javascript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="main.js" type="text/javascript"></script>
+    </head>
+
+    <body onload="cartCount()">
+        <header class="topnav">
+            <div class="topnav">
+                <!-- navigation bar - standard across all pages -->
+                <a href = "index.html"><img class = "bb" src = "image/nav/cinnamon-roll.png" alt="No Image"></a>
+                <a href = "index.html"><img class = "logo" src = "image/nav/logo.png" alt="No Image"></a>
+                <ul>
+                    <!-- unordered list for menu choices on nav -->
+                    <li> <a href="">Our Story</a> </li>
+                    <li> <a href="buns.html">Our Buns</a> </li>
+                    <li> <a href="">Contact Us</a> </li>
+                    <li> <a href="cart.html"><img class = "bag" src = "image/nav/shopping-bag.png" alt="No Image"></a> </li>
+                    <li id="cart_count">0</li>
+                </ul>
+            </div>
+        </header>
+
+
+
+        <div class="shopping-cart">
+
+            <div class="title">
+                shopping cart
+            </div>
+            <div class="all">
+                <div class="item">
+                    <div class="delete-btn">
+                        <img src="image/cart/delete-icn.svg" alt="" />
+                    </div>
+
+                    <div class="image">
+                        <img src="image/browse/blueberry.png" alt="" />
+                    </div>
+
+                    <div class="description">
+                        <span>blueberry roll</span>
+                        <span>VANILLA - MILK</span>
+                    </div>
+
+                    <div class="quantity">
+                        <button class="minus-btn" type="button" name="button">
+                            <img src="image/cart/minus.svg" alt="" />
+                        </button>
+                        <span> 1 </span>
+                        <button class="plus-btn" type="button" name="button">
+                            <img src="image/cart/plus.svg" alt="" />
+                        </button>
+                    </div>
+
+                    <div class="total-price">$15.00</div>
+                </div>
+
+                <div class="item">
+                    <div class="delete-btn">
+                        <img src="image/cart/delete-icn.svg" alt="" />
+                    </div>
+
+                    <div class="image">
+                        <img src="image/browse/caramel.png" alt="" />
+                    </div>
+
+                    <div class="description">
+                        <span>caramel roll</span>
+                        <span>NONE</span>
+                    </div>
+
+                    <div class="quantity">
+                        <button class="minus-btn" type="button" name="button">
+                            <img src="image/cart/minus.svg" alt="" />
+                        </button>
+                        <span> 1 </span>
+                        <button class="plus-btn" type="button" name="button">
+                            <img src="image/cart/plus.svg" alt="" />
+                        </button>
+                    </div>
+
+                    <div class="total-price">$1.00</div>
+                </div>
+
+                <div class="item">
+                    <div class="delete-btn">
+                        <img src="image/cart/delete-icn.svg" alt="" />
+                    </div>
+
+                    <div class="image">
+                        <img src="image/browse/walnut.png" alt="" />
+                    </div>
+
+                    <div class="description">
+                        <span>walnut roll</span>
+                        <span>SUGAR - MILK</span>
+                    </div>
+
+                    <div class="quantity">
+                        <button class="minus-btn" type="button" name="button">
+                            <img src="image/cart/minus.svg" alt="" />
+                        </button>
+                        <span> 1 </span>
+                        <button class="plus-btn" type="button" name="button">
+                            <img src="image/cart/plus.svg" alt="" />
+                        </button>
+                    </div>
+
+                    <div class="total-price">$7.00</div>
+                </div>
+            </div>
+        <footer class="cart_footer">
+            <img src = "image/cart/checkout.png" id = "cart_checkout" alt="No Image">
+        </footer>
+
+    </body>
+
+</html>
