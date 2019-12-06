@@ -1,0 +1,176 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+
+.container-fluid {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section {
+	position: relative;
+    height: 1000px;
+    z-index: 1;
+}
+
+section {
+    background-image: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/home.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+	color: #fff;
+	font-size: 80px;
+	font-family: 'Roboto Condensed', sans-serif;
+	padding-left: 30px;
+}
+
+h2 {
+	color: #fff;
+	font-size: 40px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+	padding-left: 30px;
+}
+
+h3 {
+	color: #FF7A00;
+	font-size: 40px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+}
+
+.navbar {
+	height: 100%; /* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 2; /* Stay on top */
+	right: 0;
+	background-color: transparent;
+	padding-right: 150px;
+	padding-top: 200px;
+}
+
+a {
+	color: #fff;
+	font-size: 20px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+}
+
+a:hover {
+	font-weight: 300;
+	color: #fff;
+	text-shadow: 0.3px 0.3px 10px white;
+}
+
+.row.tickets {
+	align-items: center;
+	background: rgb(50,50,50,0.7);
+	z-index: 2;
+	margin-bottom: 20px;
+	height: 100px;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.col.prices {
+	color: #fff;
+	font-size: 40px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.col-6.tickets {
+	color: #fff;
+	font-size: 27px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+}
+
+.col.buy {
+	color: #FF7A00;
+	font-size: 27px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+	text-decoration: underline;
+}
+
+section#ourboard img {
+	border-radius: 7px;
+	height: 250px;
+	width: auto;
+	position: relative;
+}
+
+.row{
+	margin-right: auto;
+	margin-left: auto;
+	width: 70%;
+	padding: 10px 0px 10px 0px;
+}
+
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 40px;
+	left: 100px;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.col:hover img {
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: brightness(30%) grayscale(100%);
+}
+
+.col:hover .middle {
+	opacity: 1;
+}
+
+.text {
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 20px;
+	z-index: 2;
+}
+
+.subtitle {
+	text-align: left;
+	color: grey;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+	z-index: 2;
+}
+
+.historyText{
+	align-items: left;
+	background: rgb(50,50,50,0.9);
+	z-index: 2;
+	margin-bottom: 20px;
+	height: 400px;
+	width: 75%;
+	margin-right: auto;
+	margin-left: auto;
+	color: #fff;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	padding: 40px 20px 20px 20px;
+}
+
+#countdown{
+	font-size: 100px;
+	color: #fff;
+	font-family: 'Roboto Condensed', sans-serif;
+
+}
+
